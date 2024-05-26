@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>India Search</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <label>India </label><br>
+        <input type="text" id="SearchInput">
+        <button onclick="serachOnGoogle()">Search</button>
+
+        <script>
+            function serachOnGoogle(){
+                var searchQuery = document.getElementById("SearchInput").value;
+                var searchURL = "https://www.google.com/search?q="+searchQuery
+                window.open(searchURL,"_self");
+            }
+        </script>
+    </body>
+</html>
